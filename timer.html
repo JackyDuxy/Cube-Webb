@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cube-Webb</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="homepage.css"> 
+    <title>Cube-Webb - Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timerStyles.css">
 </head>
-<body>
+<body onload="generateScramble()">  
     <header class="header">
         <a href="main.html" class="cubeWebb">Cube-Webb</a>
 
@@ -48,31 +49,16 @@
     </header>
 
 
-    <div id="body" class="body">
-        <div id="scrollContainer" class="scroll-container"></div>
-        <div id="text" class="text">
-            <p>Hi</p>
-            <br>
-            <p>Welcome to Cube-Webb</p>
-            <p>A very W "AI Cube Timer"</p>
-            <p>Made by: Dream_Duxy && MischieviousGoat</p>
-            <h3>Scroll the images! (More stuff!)   >:)</h3>
-            <br>
-            <br>
-            <button id="jump" class="jump">Try it -></button>
-            <br>
-            <br>
-            <br>
-            <br>
-
-        </div>
-        
+    <div id="container">
+        <div id="scrambleDisplay">scramble</div>
+        <div id="timerDisplay">0.00</div>
     </div>
-    
-    <footer>
-        <p>2024 ; Jacky_Duxy && Goaty Goaty Goaty</p>
-    </footer>
+    <div id="tools">
+        <div class ="tool" id="times"></div>
+        <div class ="tool" id="stats">Jacky figure out how to do averages and add a GUI in this box (timer.html, line 58)</div>
+    </div>
 
-    <script src="main.js"></script>
+
+    <script src="timerIndex.js"></script>
 </body>
 </html>
